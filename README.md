@@ -5,3 +5,9 @@ According to the [documentation](http://manual.softcover.io/book/softcover_markd
 - `input` doesn't work without the suffix. E.g `preface` contains `\input{chapters/a_chapter}`, but the content does not render.
 - including the md suffix, the contents is rendered, but not all is processed. Hyperlinks remain unrendered.
 - pasting the contents into the file, correctly processes the markdown.  `a_chapter` renders correctly.
+
+
+##Fixed
+
+Updating softcover using `sudo gem update softcover --pre`, then removing the suffix from the markdown files fixes the issue.
+
